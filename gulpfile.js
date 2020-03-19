@@ -42,8 +42,16 @@ const settings = {
     }
   },
   vendor: {
-    styles: ["./node_modules/normalize.css/normalize.css", "./node_modules/slick-carousel/slick/slick.css"],
-    scripts: ["./node_modules/jquery/dist/jquery.js", "./node_modules/slick-carousel/slick/slick.js"]
+    styles: [
+      "./node_modules/normalize.css/normalize.css",
+      "./node_modules/slick-carousel/slick/slick.css",
+      "./node_modules/rateyo/src/jquery.rateyo.css"
+    ],
+    scripts: [
+      "./node_modules/jquery/dist/jquery.js",
+      "./node_modules/slick-carousel/slick/slick.js",
+      "./node_modules/rateyo/src/jquery.rateyo.js"
+    ]
   }
 };
 
