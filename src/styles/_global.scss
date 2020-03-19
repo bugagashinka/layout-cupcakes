@@ -16,8 +16,7 @@ body {
 
 html,
 body,
-.wrapper,
-.header {
+.wrapper {
   height: 100%;
 }
 
@@ -43,6 +42,12 @@ body,
 
 a {
   text-decoration: none;
+}
+
+@mixin background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @mixin reset-list {
