@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  background-color: $brown-color;
+  padding: 70px 0 20px;
+  color: #fff;
+  line-height: 24px;
+
+  &-column {
+    margin: 0 10px 50px;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  .icon-phone {
+    line-height: 24px;
+
+    &::before {
+      margin-right: 15px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 23px;
+    right: 0;
+    background: url(../img/pattern.png) repeat scroll center top transparent;
+  }
+
+  &__phone {
+    min-width: 200px;
+  }
+  &__social {
+    min-width: 160px;
+  }
+
+  &__phones-list {
+    @include reset-list;
+  }
+
+  &__social-list {
+    @include horizontal-list(25px, #fff);
+  }
+}
