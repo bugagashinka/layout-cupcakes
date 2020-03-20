@@ -42,7 +42,7 @@ $(function() {
       products.find(".products-tab__content").hide();
       tabs.removeClass("active");
       $(this).addClass("active");
-      $("#category-" + id).fadeIn();
+      $("#category-" + id).show();
     });
 
     // Products subcategory
