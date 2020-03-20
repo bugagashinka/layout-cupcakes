@@ -1,8 +1,58 @@
-
 @font-face {
-    font-family: Cabin;
-    src: url('../fonts/cabin/cabin-regular-webfont.woff2') format('woff2'),
-    url('../fonts/cabin/cabin-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: Cabin;
+  src: url("../fonts/cabin/cabin-regular-webfont.woff2") format("woff2"),
+    url("../fonts/cabin/cabin-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Icomoon font
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?ijzf5u");
+  src: url("../fonts/icomoon/icomoon.eot?ijzf5u#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?ijzf5u") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?ijzf5u") format("woff"),
+    url("../fonts/icomoon/icomoon.svg?ijzf5u#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}

@@ -25,6 +25,9 @@
                     <li><a href="#">Контакты</a></li>
                   </ul>
                 </nav>
+                <a class="header__cart icon-cart" href="#">
+                  <span class="header__cart-count">0</span>
+                </a>
               </div>
             </div>
           </section>
@@ -33,7 +36,6 @@
             <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide2.jpg);"></div>
             <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide3.jpg);"></div>
             <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide4.jpg);"></div>
-            <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide1.jpg);"></div>
           </section>
         </header>
         <section class="products" id="products">
@@ -49,578 +51,793 @@
                 <div class="products-title__chocolate subcategory-title">Шоколад</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1001-choc-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадный кекс с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1002-choc-oreo-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадный кекс с муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1003-choc-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадный кекс с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1004-smores-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Смор кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1005-choc-straw-cream-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадно-клубничный кремовый кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1006-choc-caramel-salty-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадно-карамельный соленый кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1007-choc-choc-chip-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадный кекс с шоколадной стружкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1008-choc-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколадный кекс с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1009-choc-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Шоколад кекс с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__white subcategory-title">Белый / Ваниль</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1101-white-razzle-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый кекс "Праздник"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1102-straw-blonde-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Клубничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1104-apple-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Яблочный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1103-blueberry-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Черничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1105-mango-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Манго кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1106-eclair-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Кекс эклер</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1107-the-neapolitan-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Неаполитанский кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1108-pina-colada-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Пина Колада кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1109-white-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1110-white-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1111-white-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1112-white-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1113-white-straw-oreo-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Белый с клубничным мусомм Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__velvet subcategory-title">Красный бархат</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/velvet/1201-red-velvet-cream-ch-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Красный бархат и мусс "Cливочный сыр"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
 
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/velvet/1202-red-velvet-choc-chip-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Красный бархат с шоколадным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/velvet/1203-red-velvet-oreo-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Красный бархат с муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/velvet/1204-red-velvet-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Крысный бархат с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__banana subcategory-title">Банан</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1301-banana-vanilla-cream-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Банан с ванильным кремом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1303-banana-mango-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Банановый кекс с манго</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1302-banana-strawberry-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Бананово-клубничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1304-banana-guava-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Банановый кекс с гуавой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1305-banana-split-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Банановый сплит кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/banana/1306-the-elvis-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Кекс "Элвис"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__lemon subcategory-title">Лимон</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1401-lemon-drop-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Кекс с каплями лимона</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1402-lemon-razzle-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Лимонный кекс "Праздник"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1403-lemon-strawberry-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Лимонно-клубничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1404-lemon-guava-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Лимонный кекс с гуавой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1405-lemon-blueberry-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Лимонный кекс с черникой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/lemon/1406-lemon-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Лимонный кекс "Счастье"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__strawberry subcategory-title">Клубника</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1602-very-berry-straw-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Ягодный кекс с клубникой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1603-straw-blueberry-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Клубничный кекс с черникой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1604-straw-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Клубничное пирожное "Счастье"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1605-straw-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Клубничный кекс с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1606-straw-straw-oreo-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Клубничный кекс с клубничным муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
@@ -629,292 +846,402 @@
                 <div class="products-title__chocolate subcategory-title">Без глютена, Шоколад</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1001-choc-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадный кекс с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1002-choc-oreo-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадный кекс с муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1003-choc-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадный кекс с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1004-smores-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Смор кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1005-choc-straw-cream-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадно-клубничный кремовый кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1006-choc-caramel-salty-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадно-карамельный соленый кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1007-choc-choc-chip-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадный кекс с шоколадной стружкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1008-choc-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколадный кекс с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1009-choc-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Шоколад кекс с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__white subcategory-title">Без глютена, Белый / Ваниль</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1101-white-razzle-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый кекс "Праздник"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1102-straw-blonde-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Клубничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1104-apple-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Яблочный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1103-blueberry-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Черничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1105-mango-bliss-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Манго кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1106-eclair-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Кекс эклер</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1107-the-neapolitan-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Неаполитанский кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1108-pina-colada-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Пина Колада кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1109-white-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1110-white-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1111-white-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1112-white-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1113-white-straw-oreo-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Без глютена Белый с клубничным мусомм Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
@@ -923,282 +1250,387 @@
                 <div class="products-title__chocolate subcategory-title">Веган, Шоколад</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1001-choc-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколадный кекс с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1002-choc-oreo-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколадный кекс с муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1004-smores-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Смор кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1005-choc-straw-cream-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколадно-клубничный кремовый кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1007-choc-choc-chip-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколадный кекс с шоколадной стружкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1008-choc-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколадный кекс с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/chocolate/1009-choc-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Шоколад кекс с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__white subcategory-title">Веган, Белый / Ваниль</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1101-white-razzle-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый кекс "Праздник"</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1102-straw-blonde-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Клубничный кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1106-eclair-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Кекс эклер</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1107-the-neapolitan-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Неаполитанский кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1108-pina-colada-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Пина Колада кекс</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1109-white-strawberry-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый с клубничным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1110-white-nutella-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый с муссом Nutella</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1111-white-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1112-white-choc-fudge-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый с шоколадной помадкой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/vanilla/1113-white-straw-oreo-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Белый с клубничным мусомм Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>
                 <div class="products-title__strawberry subcategory-title">Веган, Клубника</div>
                 <div class="products__subcategory-list">
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1602-very-berry-straw-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Ягодный кекс с клубникой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1603-straw-blueberry-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Клубничный кекс с черникой</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1605-straw-vanilla-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Клубничный кекс с ванильным муссом</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                   <div class="products__item">
-                    <a href="#">
+                    <div class="products__item-head">
                       <span
                         class="products__item-img"
                         style="background-image: url(./img/home-page/products/standard/strawberry/1606-straw-straw-oreo-m-cupcake-web.jpg);"
                       >
-                        <a href="#" class="button products__item-buy">Купить</a>
                       </span>
-                    </a>
+                      <a href="#" class="button products__item-info">Подробнее</a>
+                    </div>
                     <div class="products__item-title">Веган Клубничный кекс с клубничным муссом Oreo</div>
-                    <div class="products__item-rate"></div>
+                    <div class="products-count products__item-count">
+                      <a class="button products__item-minus" href="#">-</a>
+                      <input type="text" class="products__item-number" size="3" maxlength="3" value="1" readonly />
+                      <a class="button products__item-plus" href="#">+</a>
+                    </div>
+                    <a class="button products__item-buy" href="#">В корзину</a>
                     <div class="products__item-price"><span class="product__item-currency">&#8372;</span>25.00</div>
                   </div>
                 </div>

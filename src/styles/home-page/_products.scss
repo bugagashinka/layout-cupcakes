@@ -26,20 +26,24 @@ $product-row-count: 6;
     border: 2px solid #ab9b9b;
     border-width: 0 2px 2px 0;
     transform: rotate(-135deg) translateY(-50%);
-    transition: border 0.25s;
+    transition: border 0.3s;
     transition: transform 0.4s;
   }
   &:hover::after {
-    border-color: #230808;
+    border-color: $jam-color;
   }
   &.shrink::after {
     transform: rotate(45deg) translateX(-50%);
-    border-color: #230808;
+    border-color: $jam-color;
   }
 }
 
 .products {
   padding: 80px 0 120px;
+
+  &-count {
+    margin: 0 0 10px;
+  }
 
   &-title {
     margin: 0;
@@ -68,7 +72,7 @@ $product-row-count: 6;
       background-color: #effd5f;
     }
     &__strawberry {
-      background-color: #ff0063;
+      background-color: #ff6a9b;
     }
   }
 
@@ -94,7 +98,7 @@ $product-row-count: 6;
     cursor: pointer;
 
     &.active {
-      background-color: $brown-color;
+      background-color: $jam-color;
       color: #fff;
     }
     &__content {
@@ -171,6 +175,12 @@ $product-row-count: 6;
         opacity: 1;
         background-image: url(../../img/ornament.svg);
       }
+      .products__item-count {
+        border-color: $brown-color;
+      }
+      .products__item-buy {
+        background-color: $brown-color;
+      }
     }
 
     &-img {
@@ -181,18 +191,71 @@ $product-row-count: 6;
       @include background-img;
     }
 
+    &-info {
+      display: none;
+      position: absolute;
+      padding: 8px 12px;
+      left: 50%;
+      top: 100px;
+      transform: translateX(-50%);
+      background-color: #fff;
+      border: 1px solid $jam-color;
+      color: $brown-color;
+    }
+
+    &-head:hover {
+      .products__item-img {
+        filter: blur(2px);
+      }
+      .products__item-info {
+        display: initial;
+      }
+    }
+
     &-rate {
       margin: 10px auto;
+    }
+
+    &-number {
+      padding: 0 5px;
+      border: none;
+      font-size: 18px;
+      outline: none;
+      text-align: center;
+    }
+
+    &-count {
+      display: inline-block;
+      border: 1px solid rgba($brown-color, 0.3);
+      transition: border 0.3s;
+
+      a {
+        display: inline-block;
+        width: 25px;
+        font-family: Arial;
+        color: $brown-color;
+        font-size: 18px;
+        line-height: 48px;
+      }
+    }
+
+    &-buy {
+      display: inline-block;
+      color: #fff;
+      font-weight: 600;
+      padding: 14px 13px;
+      background-color: rgba($brown-color, 0.3);
+      transition: background-color 0.3s;
+
+      .products__item:hover &:hover {
+        background-color: #9a6b55;
+      }
     }
 
     &-price {
       font-size: 24px;
       padding: 10px 5px;
       color: rgba(0, 0, 0, 0.7);
-    }
-
-    &-buy {
-      display: none;
     }
 
     &-title {
