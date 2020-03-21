@@ -6,6 +6,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico/Pacifico-Regular.woff2") format("woff2"),
+    url("../fonts/pacifico/Pacifico-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Icomoon font
 @font-face {
   font-family: "icomoon";

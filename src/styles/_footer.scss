@@ -11,6 +11,11 @@
 
   a {
     color: #fff;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $jam-color;
+    }
   }
 
   .icon-phone {
@@ -28,13 +33,7 @@
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    height: 23px;
-    right: 0;
-    background: url(../img/pattern.png) repeat scroll center top transparent;
+    @include curves-line;
   }
 
   &__phone {
@@ -44,6 +43,12 @@
     min-width: 160px;
   }
 
+  .workflow__item--bold {
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  &__workflow-list,
   &__phones-list {
     @include reset-list;
   }

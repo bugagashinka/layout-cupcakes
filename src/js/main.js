@@ -1,13 +1,16 @@
 $(function() {
+  var rellax = new Rellax(".rellax");
+
   // *** Global ***
 
   // Animated scroll to target section
-  $(document).on("click", 'a[href^="#"]', function(event) {
-    event.preventDefault();
+  $(document).on("click", 'a[href*="#"]', function(event) {
     var $nav = $(".header__top");
+    var targetSection = $("#" + $.attr(this, "href").split("#")[1]);
+    console.log(targetSection);
     $("html, body").animate(
       {
-        scrollTop: $($.attr(this, "href")).offset().top - $nav.outerHeight()
+        scrollTop: targetSection.offset().top - $nav.outerHeight()
       },
       500
     );

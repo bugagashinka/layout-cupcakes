@@ -1,0 +1,124 @@
+.title-small {
+  font-size: 18px;
+  margin: 12px 0;
+  font-weight: 400;
+}
+.title-medium {
+  font-size: 21px;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+.title-large {
+  font-size: 32px;
+  margin: 18px 0;
+  text-transform: uppercase;
+}
+.contacts-info {
+  position: relative;
+  padding: 60px 0;
+  line-height: 32px;
+  border-top: 1px solid transparent;
+
+  &::before {
+    @include curves-line;
+    top: -24px;
+    transform: rotate(180deg);
+  }
+
+  &__days {
+    font-size: 32px;
+  }
+
+  &__subtitle,
+  &__title {
+    display: block;
+    font-family: Pacifico, cursive;
+    text-align: center;
+    font-weight: 600;
+    color: $brown-color;
+    word-spacing: 5px;
+  }
+  &__subtitle {
+    font-weight: 400;
+
+    &--1 {
+      margin: -6px 0 50px;
+    }
+  }
+
+  .icon-phone::before {
+    margin-right: 10px;
+  }
+  a {
+    color: #000;
+    transition: all 0.3s;
+    &:hover {
+      color: $jam-color;
+    }
+  }
+  p {
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  &__phones {
+    margin-bottom: 40px;
+
+    ul {
+      @include reset-list;
+      margin: auto;
+      text-align: center;
+      li {
+        line-height: 32px;
+      }
+    }
+  }
+}
+.contacts-form {
+  &__inner {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    align-self: flex-start;
+    color: $brown-color;
+  }
+
+  &__fullname,
+  &__email,
+  &__question {
+    border: 1px solid $brown-color;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+  }
+
+  &__send {
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 13px;
+    background-color: $brown-color;
+    transition: background-color 0.3s;
+    border: none;
+
+    &:hover {
+      background-color: #9a6b55;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+  }
+
+  &__fullname,
+  &__email,
+  &__question {
+    width: 100%;
+  }
+
+  &__question {
+    resize: none;
+  }
+}
