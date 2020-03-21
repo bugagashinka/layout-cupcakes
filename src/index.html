@@ -10,19 +10,19 @@
   <body>
     <div class="wrapper">
       <main class="content home-content">
-        <header class="header">
+        <header class="header rellax" data-rellax-speed="-6">
           <section class="header__top">
             <div class="container">
               <div class="header__top-inner">
                 <div class="header__logo">
-                  <a href=""><span class="header__logo-img"></span></a>
+                  <a href="/index.html"><span class="header__logo-img"></span></a>
                 </div>
                 <nav class="header__menu">
                   <ul class="header__menu-list menu-list">
-                    <li><a href="#products">Меню</a></li>
+                    <li><a href="/index.html#products">Меню</a></li>
                     <li><a href="#">Акции</a></li>
                     <li><a href="#">Доставка и Оплата</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="/contacts.html">Контакты</a></li>
                   </ul>
                 </nav>
                 <a class="header__cart icon-cart" href="#">
@@ -31,14 +31,20 @@
               </div>
             </div>
           </section>
-          <section class="header__slider slider">
-            <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide1.jpg);"></div>
-            <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide2.jpg);"></div>
-            <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide3.jpg);"></div>
-            <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide4.jpg);"></div>
+          <section class="header__bottom">
+            <section class="header__bottom-headline">
+              <div class="header__bottom-title">Добро пожаловать</div>
+              <div class="header__bottom-subtitle">в мастерскую кексов</div>
+            </section>
+            <section class="header__slider slider">
+              <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide1.jpg);"></div>
+              <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide2.jpg);"></div>
+              <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide3.jpg);"></div>
+              <div class="slider-item" style="background-image: url(./img/home-page/cupcake-caffe-slide4.jpg);"></div>
+            </section>
           </section>
         </header>
-        <section class="products" id="products">
+        <section class="products rellax" data-rellax-speed="2" id="products">
           <div class="container">
             <div class="products-title">Наша выпечка:</div>
             <div class="products__category category">
@@ -1643,9 +1649,14 @@
         <div class="container">
           <div class="footer__inner">
             <section class="footer-column footer__workflow">
-              <div>Прием заказов с 09:00 до 20:00</div>
-              <div>Работаем без выходных</div>
-              <div>Доставка с 10:00 до 21:00</div>
+              <ul class="footer__workflow-list">
+                <li><div class="workflow__item--bold">Прием заказов с 09:00 до 20:00</div></li>
+                <li><div>Работаем без выходных</div></li>
+                <li><div>Доставка с 10:00 до 21:00</div></li>
+                <li>
+                  <a class="footer__social-email" href="mailto:manager@cupcakes.com.ua">manager@cupcakes.com.ua</a>
+                </li>
+              </ul>
             </section>
             <section class="footer-column footer__phones">
               <ul class="footer__phones-list">
