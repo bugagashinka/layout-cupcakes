@@ -1,0 +1,52 @@
+.delivery-info {
+  position: relative;
+  padding: 60px 0 0;
+  font-family: Pacifico;
+  font-weight: 100;
+  color: #803a19;
+  font-size: 21px;
+  line-height: 1.3;
+  background-color: #fff;
+
+  &::before {
+    @include curves-line;
+    top: -23px;
+    transform: rotate(180deg);
+  }
+
+  &__subtitle,
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle--upper {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  p {
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    padding: 20px 0;
+  }
+
+  &__phones {
+    max-width: 340px;
+    margin: 0 auto;
+
+    ul {
+      @include reset-list;
+    }
+    li::before {
+      margin-right: 10px;
+    }
+    a {
+      color: $brown-color;
+      transition: color 0.3s;
+      line-height: 1.4;
+      &:hover {
+        color: $jam-color;
+      }
+    }
+  }
+}

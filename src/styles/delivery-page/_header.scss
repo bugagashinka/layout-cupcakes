@@ -1,0 +1,6 @@
+.delivery-content {
+  .header__bottom {
+    height: 70vh;
+    @include background-img;
+  }
+}

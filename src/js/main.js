@@ -62,4 +62,14 @@ $(function() {
   }
 
   // *** End Home page ***
+
+  // *** Delivery page ***
+
+  // Header top menu section
+  $(document).scroll(function() {
+    var $nav = $(".delivery-content .header__top");
+    $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight * 0.6 - $nav.outerHeight() / 2);
+  });
+
+  // *** End Delivery page ***
 });
