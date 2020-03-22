@@ -1,7 +1,14 @@
 $(function() {
   var rellax = new Rellax(".rellax");
 
-  // *** Global ***
+  // ********* Global *********
+  function headerTopScroll(pageSelector, heightFactor) {
+    heightFactor = heightFactor || 1;
+    $(document).scroll(function() {
+      var $nav = $(pageSelector + ".header__top");
+      $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight * heightFactor - $nav.outerHeight() / 2);
+    });
+  }
 
   // Animated scroll to target section
   $(document).on("click", 'a[href*="#"]', function(event) {
@@ -18,7 +25,7 @@ $(function() {
 
   // *** End Global ***
 
-  // *** Home page ***
+  // ********* Home page *********
 
   // Header slider
   $(".header__slider").slick({
@@ -28,10 +35,7 @@ $(function() {
   });
 
   // Header top menu section
-  $(document).scroll(function() {
-    var $nav = $(".home-content .header__top");
-    $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight - $nav.outerHeight() / 2);
-  });
+  headerTopScroll(".home-content");
 
   // Products section
   var products = $(".products");
@@ -63,13 +67,16 @@ $(function() {
 
   // *** End Home page ***
 
-  // *** Delivery page ***
+  // ********* Delivery page *********
 
   // Header top menu section
-  $(document).scroll(function() {
-    var $nav = $(".delivery-content .header__top");
-    $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight * 0.6 - $nav.outerHeight() / 2);
-  });
-
+  headerTopScroll(".home-content", 0.6);
   // *** End Delivery page ***
+
+  // ********* Contacts page ************
+
+  // Header top menu section
+  headerTopScroll(".home-content", 0.65);
+
+  // *** End Contacts page ***
 });

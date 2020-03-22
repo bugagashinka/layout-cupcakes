@@ -1,18 +1,5 @@
 .contacts-header {
   height: 75vh;
-
-  .header__top {
-    background-color: rgba($brown-color, 0.5);
-
-    a {
-      color: #fff;
-      text-shadow: 1px 1px 2px #ce5937;
-    }
-  }
-}
-
-.header-map {
-  padding-top: $header-top-height;
 }
 
 .contacts-info {
