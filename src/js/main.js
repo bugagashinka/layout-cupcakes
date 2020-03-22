@@ -29,7 +29,7 @@ $(function() {
 
   // Header top menu section
   $(document).scroll(function() {
-    var $nav = $(".header__top");
+    var $nav = $(".home-content .header__top");
     $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight - $nav.outerHeight() / 2);
   });
 
