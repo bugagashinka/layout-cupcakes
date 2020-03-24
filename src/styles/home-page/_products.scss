@@ -190,7 +190,7 @@ $product-row-count: 6;
         border-color: $brown-color;
       }
       .products__item-buy {
-        background-color: $brown-color;
+        background-color: $jam-color;
       }
     }
 
@@ -258,11 +258,11 @@ $product-row-count: 6;
       color: #fff;
       font-weight: 600;
       padding: 14px 13px;
-      background-color: rgba($brown-color, 0.3);
+      background-color: rgba($jam-color, 0.3);
       transition: background-color 0.3s;
 
       .products__item:hover &:hover {
-        background-color: #9a6b55;
+        background-color: #d85880;
       }
     }
 
