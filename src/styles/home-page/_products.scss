@@ -234,6 +234,9 @@ $product-row-count: 6;
       outline: none;
       text-align: center;
     }
+    &-currency {
+      margin-right: 3px;
+    }
 
     &-count {
       display: inline-block;
