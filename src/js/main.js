@@ -66,16 +66,16 @@ $(function() {
       " \
       <div class='products-cart__item'> \
         <span class='products-cart__item-close'>X</span>  \
-        <div class='cart-item-thumb 'style='background-image: " +
+        <div class='cart__item-thumb 'style='background-image: " +
       thumb +
       "'></div>  \
-    <div class='cart-item-title'>" +
+    <div class='cart__item-title'>" +
       title +
       "</div>  \
-    <div class='cart-item-price'><span class='products__item-currency'>₴</span>" +
+    <div class='cart__item-price'><span class='products__item-currency'>₴</span>" +
       price +
       "</div>  \
-    <div class='count cart-item-count products__item-count'>  \
+    <div class='count cart__item-count products__item-count'>  \
       <a class='button products__item-minus' href='#'>-</a>  \
       <input type='text' class='products__item-number' size='3' maxlength='3' value='" +
       count +
