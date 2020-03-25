@@ -1,8 +1,11 @@
-//БАГА ПОСЛЕ ЗАГРУЗКИ, КАРТА ПУСТАЯ
-
 $(function() {
   var CART_EXPIRE_TIME = 86400 * 1000; // 24 Hours
+  var NOTIFICATION_EXPIRE = 1500;
+  var NOTIFICATION_FADEIN_TIME = 500;
+  var NOTIFICATION_FADEOUT_TIME = 500;
+
   var cartNode = $(".products-cart");
+  var cartNotifyNode = $(".cart-notify");
   var cartCountNode = $(".header__cart-count");
   var rellax = new Rellax(".rellax");
 
@@ -139,6 +142,10 @@ $(function() {
         // Update header cart counter
         updateHeaderCartCounter(parseInt(cartCountNode.html()) - cartModel.products[productTitle].count);
 
+        // Decrease total price after delete
+        cartTotalPrice -=
+          parseInt(cartModel.products[productTitle].price) * parseInt(cartModel.products[productTitle].count);
+
         // Remove product from local storage
         delete cartModel.products[productTitle];
       } else if (targetElementClasses.includes("button products__item-minus")) {
@@ -162,7 +169,6 @@ $(function() {
       updateCart(cartModel);
 
       // Update total price cart counter
-      console.log(cartTotalPrice);
       cartNode.find(".products-cart__total-value").html(cartTotalPrice);
     });
   }
@@ -239,21 +245,40 @@ $(function() {
       } else if (target.includes("products__item-plus")) {
         productCountInput.val(++productCount);
       } else if (target.includes("products__item-buy")) {
+        var productImg = $(this)
+          .find(".products__item-img")
+          .css("background-image");
+
+        var productTitle = $(this)
+          .find(".products__item-title")
+          .html();
+
         addToCart({
-          title: $(this)
-            .find(".products__item-title")
-            .html(),
-          thumb: $(this)
-            .find(".products__item-img")
-            .css("background-image"),
+          title: productTitle,
+          thumb: productImg,
           price: $(this)
             .find(".products__item-price")
             .html()
             .split("</span>")[1],
           count: productCount
         });
+
+        // Notify about selected product
+        showCartNotification(productTitle, productImg);
       }
     });
+
+    function showCartNotification(title, thumb) {
+      if (cartNotifyNode.css("display") == "none") {
+        cartNotifyNode.find(".cart__item-title").html(title);
+        cartNotifyNode.find(".cart-notify__thumb").css("background-image", thumb);
+
+        cartNotifyNode
+          .fadeIn(NOTIFICATION_FADEIN_TIME)
+          .delay(NOTIFICATION_EXPIRE)
+          .fadeOut(NOTIFICATION_FADEOUT_TIME);
+      }
+    }
 
     function addToCart(productModel) {
       var cart = getCart();

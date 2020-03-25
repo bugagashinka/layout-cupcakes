@@ -1,0 +1,30 @@
+.cart-notify {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: -80px;
+  width: 240px;
+  border: 1px solid #803a19;
+  padding: 20px;
+  background-color: #fff;
+  z-index: 20;
+}
+.cart-notify__title {
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 15px;
+  text-align: center;
+  border-bottom: 1px solid $brown-color;
+}
+.cart-notify__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.cart-notify__thumb {
+  background-color: rgba($brown-color, 0.3);
+}
+.cart__item-title {
+  margin: 0;
+}

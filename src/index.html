@@ -25,9 +25,21 @@
                     <li><a href="/contacts.html">Контакты</a></li>
                   </ul>
                 </nav>
-                <a class="header__cart icon-cart" href="#">
-                  <span class="header__cart-count">0</span>
-                </a>
+                <section class="header__cart-box">
+                  <a class="header__cart icon-cart" href="#">
+                    <span class="header__cart-count">0</span>
+                  </a>
+                  <aside class="cart-notify">
+                    <div class="cart-notify__title">Вы добавили в корзину:</div>
+                    <div class="cart-notify__content">
+                      <div
+                        class="cart-notify__thumb cart__item-thumb"
+                        style="background-image: url();"
+                      ></div>
+                      <div class="cart__item-title"></div>
+                    </div>
+                  </aside>
+                </section>
               </div>
             </div>
           </section>
@@ -1648,16 +1660,18 @@
         <aside class="products-cart">
           <form action="" class="prodcuts-cart__form">
             <span class="products-cart__close">X</span>
-            <section class="products-cart__list">
-            </section>
+            <section class="products-cart__list"></section>
             <section class="products-cart__bottom">
               <input class="products-cart__promo" type="text" placeholder="Ввести промокод" />
               <div>
                 <div class="products-cart__total">
-                  Итого: <span><span class="products__item-currency">&#8372;</span><span class="products-cart__total-value"></span></span>
+                  Итого:
+                  <span
+                    ><span class="products__item-currency">&#8372;</span><span class="products-cart__total-value"></span
+                  ></span>
                 </div>
                 <div class="products-cart__delivery">
-                  Доставка: <span><span><span class="products__item-currency">&#8372;</span>0</span>
+                  Доставка: <span><span class="products__item-currency">&#8372;</span>0</span>
                 </div>
               </div>
             </section>
