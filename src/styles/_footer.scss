@@ -34,6 +34,7 @@
 
   &::before {
     @include curves-line;
+    top: 0px;
   }
 
   &__phone {

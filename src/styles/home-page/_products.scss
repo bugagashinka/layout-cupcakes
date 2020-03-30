@@ -46,7 +46,7 @@ $product-row-count: 6;
 
   &::before {
     @include curves-line;
-    top: -23px;
+    top: -21px;
     transform: rotate(180deg);
   }
 
