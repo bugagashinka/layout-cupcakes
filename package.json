@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "flatpickr": "^4.6.3",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "rateyo": "^2.3.5",

@@ -1,0 +1,81 @@
+.order-subform {
+  position: relative;
+  background-color: #fff;
+  max-width: 800px;
+  width: 100%;
+
+  &__inner {
+    display: flex;
+  }
+  &__column {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 16px;
+  }
+  &__row {
+    display: flex;
+  }
+
+  input {
+    border: 1px solid $brown-color;
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  &__phone {
+    position: relative;
+    input {
+      padding-left: 53px;
+    }
+    &-prefix {
+      position: absolute;
+      left: 16px;
+      line-height: 44px;
+    }
+  }
+
+  &__time {
+    margin-right: 10px;
+    flex-basis: 100px;
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    font-weight: 600;
+    border-bottom: 1px solid $brown-color;
+  }
+
+  &__city {
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #000;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #000;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #000;
+    }
+  }
+}
+.order-submit {
+  position: absolute;
+  bottom: -32px;
+  left: -32px;
+  width: calc(100% + 64px);
+  padding: 26px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  background-color: $jam-color;
+  cursor: pointer;
+}
