@@ -53,10 +53,14 @@ $(function() {
 
   function headerTopScroll(pageSelector, heightFactor) {
     heightFactor = heightFactor || 1;
+    var $nav = $(pageSelector + " .header__top");
+
     $(document).scroll(function() {
-      var $nav = $(pageSelector + " .header__top");
       $nav.toggleClass("scrolled", $(this).scrollTop() >= window.innerHeight * heightFactor - $nav.outerHeight() / 2);
     });
+
+    // Single check, set color for 'header__top' after page reload
+    $nav.toggleClass("scrolled", $(document).scrollTop() >= window.innerHeight * heightFactor - $nav.outerHeight() / 2);
   }
 
   function updateHeaderCartCounter(count) {
