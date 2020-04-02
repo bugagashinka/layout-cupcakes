@@ -177,6 +177,12 @@ $(function() {
 
         // Remove product from local storage
         delete cartModel.products[productTitle];
+
+        if (Object.keys(cartModel.products).length == 0) {
+          updateCart({});
+          closeFullCartPanel();
+          updateHeaderCartCounter(0);
+        }
       } else if (targetElementClasses.includes("button products__item-minus")) {
         // Get product item counter value
         var productItemCount = parseInt(itemCounterNode.val());
