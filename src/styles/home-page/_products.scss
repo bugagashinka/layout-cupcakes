@@ -202,6 +202,10 @@ $product-row-count: 6;
       @include background-img;
     }
 
+    &-descr {
+      display: none;
+    }
+
     &-info {
       display: none;
       position: absolute;
@@ -236,6 +240,7 @@ $product-row-count: 6;
     }
     &-currency {
       margin-right: 3px;
+      vertical-align: text-top;
     }
 
     &-count {
@@ -281,6 +286,94 @@ $product-row-count: 6;
       padding: 0 17px;
       font-size: 18px;
       color: $brown-color;
+    }
+  }
+}
+
+.product-details {
+  border: 1px solid $jam-color;
+
+  .mfp-close {
+    font-size: 38px;
+  }
+
+  &__popup {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    width: auto;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+
+  &__img {
+    min-width: 500px;
+    height: 512px;
+    @include background-img;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    margin-left: 50px;
+  }
+  &__title {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $brown-color;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $jam-color;
+    font-size: 28px;
+    line-height: 48px;
+    font-family: Pacifico;
+    letter-spacing: 1.5px;
+  }
+  &__subtitle {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: $jam-color;
+  }
+  &__price-value {
+    font-weight: 600;
+  }
+  &__rate {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+  }
+  &__descr {
+    font-size: 21px;
+  }
+  &__controls {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__count {
+    max-width: 80px;
+    padding: 21px 16px;
+    border: 1px solid $brown-color;
+    margin-right: 25px;
+    font-size: 27px;
+    text-align: center;
+    color: $jam-color;
+  }
+  &-buy {
+    line-height: 75px;
+    padding: 0px 16px;
+    text-transform: uppercase;
+    background-color: $jam-color;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #d85880;
     }
   }
 }

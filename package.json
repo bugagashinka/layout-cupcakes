@@ -12,6 +12,7 @@
   "dependencies": {
     "flatpickr": "^4.6.3",
     "jquery": "^3.4.1",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
     "rateyo": "^2.3.5",
     "rellax": "^1.12.1",

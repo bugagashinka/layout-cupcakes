@@ -46,14 +46,16 @@ const settings = {
       "./node_modules/normalize.css/normalize.css",
       "./node_modules/slick-carousel/slick/slick.css",
       "./node_modules/rateyo/src/jquery.rateyo.css",
-      "./node_modules/flatpickr/dist/flatpickr.css"
+      "./node_modules/flatpickr/dist/flatpickr.css",
+      "./node_modules/magnific-popup/dist/magnific-popup.css"
     ],
     scripts: [
       "./node_modules/jquery/dist/jquery.js",
       "./node_modules/slick-carousel/slick/slick.js",
       "./node_modules/rateyo/src/jquery.rateyo.js",
       "./node_modules/rellax/rellax.js",
-      "./node_modules/flatpickr/dist/flatpickr.js"
+      "./node_modules/flatpickr/dist/flatpickr.js",
+      "./node_modules/magnific-popup/dist/jquery.magnific-popup.js"
     ]
   }
 };

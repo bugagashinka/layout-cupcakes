@@ -15,6 +15,22 @@ $(function() {
 
   // ********* Global *********
 
+  // Restricts input for each element in the set of matched elements to the given inputFilter.
+  $.fn.inputFilter = function(inputFilter) {
+    return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      } else {
+        this.value = "";
+      }
+    });
+  };
+
   // Clear cart every 24 hours
   checkCartExpireDate();
 
@@ -189,10 +205,8 @@ $(function() {
         // Increase product count in localStorage
         cartModel.products[productTitle].count++;
 
-        console.log(cartTotalPrice);
         // Increase cart panel total counter
         cartTotalPrice += parseInt(cartModel.products[productTitle].price);
-        console.log(cartTotalPrice);
 
         // Update item total price
         itemTotalNode.html(cartModel.products[productTitle].count * cartModel.products[productTitle].price);
@@ -298,14 +312,16 @@ $(function() {
     });
 
     //Products buy logic
-    $(".products__item").click(function(event) {
+    products.find(".products__item").click(function(event) {
       event.preventDefault();
 
       var target = event.target.getAttribute("class");
       var productCountInput = $(this).find(".products__item-number");
       var productCount = productCountInput.val();
 
-      if (target.includes("products__item-minus")) {
+      if (target.includes("products__item-info")) {
+        $.magnificPopup.instance.open(Object.assign({}, popupConfig, { index: $(this).index(".products__item") }));
+      } else if (target.includes("products__item-minus")) {
         if (productCount == 1) return;
         productCountInput.val(--productCount);
       } else if (target.includes("products__item-plus")) {
@@ -323,9 +339,8 @@ $(function() {
           title: productTitle,
           thumb: productImg,
           price: $(this)
-            .find(".products__item-price")
-            .html()
-            .split("</span>")[1],
+            .find(".products__item-price-value")
+            .html(),
           count: productCount
         });
 
@@ -347,6 +362,7 @@ $(function() {
     }
 
     function addToCart(productModel) {
+      console.log("Add to cart", productModel);
       var cart = getCart();
 
       var cartItem = cart.products[productModel.title];
@@ -365,13 +381,83 @@ $(function() {
       updateHeaderCartCounter(parseInt(productModel.count) + parseInt(cartCountNode.html()));
     }
 
-    // Product item rate
-    $(".products__item-rate").rateYo({
-      rating: 4,
-      starWidth: "24px"
+    // Initalize product details data for popup window:
+    var productsDetails = Array.from(products.find(".products__item")).map(function(productItemNode) {
+      return {
+        image: productItemNode.querySelector(".products__item-img").style.backgroundImage,
+        title: productItemNode.querySelector(".products__item-title").innerHTML,
+        price: productItemNode.querySelector(".products__item-price-value").innerHTML,
+        description: productItemNode.querySelector(".products__item-descr").innerHTML.trim(),
+        count: productItemNode.querySelector(".products__item-number").value
+      };
     });
-  }
 
+    var popupConfig = {
+      key: "products-popup",
+      items: productsDetails,
+      type: "inline",
+      inline: {
+        // prettier-ignore
+        markup:
+        '<section class="product-details product-details__popup">' +
+          '<div class="mfp-close product-datails__close-btn"></div>' +
+          '<div class="product-details__inner">' +
+            '<div class="product-details__img" style="background-image: url();"></div>' +
+            '<div class="product-details__content">' +
+              '<div class="product-details__title"></div>' +
+              '<div class="product-details__subtitle">' +
+                '<span class="product-details__price">' +
+                  '<span class="products__item-currency">&#8372;</span>' +
+                  '<span class="product-details__price-value"></span>' +
+                '</span>' +
+                '<span class="product-details__rate"></span>' +
+              '</div>' +
+              '<p class="product-details__descr"></p>' +
+              '<div class="product-details__controls">' +
+                '<input class="product-details__count" maxlength="3" type="text" value=""/>' +
+                '<a class="product-details-buy products__item-buy" href="#">В корзину</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</section>'
+      },
+      gallery: {
+        enabled: true
+      },
+      callbacks: {
+        markupParse: function(template, values, item) {
+          // Product details rate
+          template.find(".product-details__rate").rateYo({
+            rating: 4,
+            starWidth: "24px"
+          });
+          template.find(".product-details__count").inputFilter(function(value) {
+            return /^\d*$/.test(value) && value > 0;
+          });
+
+          var thumb = template.find(".product-details__img").css("background-image", values.image);
+          var title = template.find(".product-details__title").html(values.title);
+          var price = template.find(".product-details__price-value").html(values.price);
+          template.find(".product-details__descr").html(values.description);
+          var count = template.find(".product-details__count").val(values.count);
+
+          console.log(template);
+          console.log("!!!", template.find(".product-details-buy"));
+
+          template.find(".product-details-buy").click(function(event) {
+            event.preventDefault();
+            $.magnificPopup.instance.close();
+            addToCart({
+              title: title.html(),
+              thumb: thumb.css("background-image"),
+              price: price.html(),
+              count: count.val()
+            });
+          });
+        }
+      }
+    };
+  }
   // *** End Home page ***
 
   // ********* Delivery page *********

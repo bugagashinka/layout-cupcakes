@@ -79,6 +79,7 @@
   margin-left: auto;
   font-size: 21px;
   color: $brown-color;
+  transition: color 0.3s;
 
   &:hover::before {
     color: $jam-color;
