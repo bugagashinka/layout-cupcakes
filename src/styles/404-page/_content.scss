@@ -1,0 +1,43 @@
+.notfound-error {
+  margin-top: $header-top-height;
+  padding: 120px 0 60px;
+
+  &__inner {
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+  }
+  &__text {
+    color: $brown-color;
+    text-align: center;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    @include background-img;
+    width: 450px;
+    height: 267px;
+  }
+  &__back-btn {
+    opacity: 0.8;
+    color: $brown-color;
+    transition: color 0.3s;
+
+    &::before {
+      content: "\2190";
+      margin-left: -10px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: $jam-color;
+    }
+  }
+}
