@@ -40,24 +40,51 @@
         </header>
 
         <aside class="products-cart">
-          <form action="" class="prodcuts-cart__form">
-            <span class="products-cart__close">X</span>
-            <section class="products-cart__list"></section>
-            <section class="products-cart__bottom">
-              <input class="products-cart__promo" type="text" placeholder="Ввести промокод" />
-              <div>
-                <div class="products-cart__total">
-                  Итого:
-                  <span
-                    ><span class="products__item-currency">&#8372;</span><span class="products-cart__total-value"></span
-                  ></span>
+          <form class="prodcuts-cart__form" action="/" onsubmit="return false">
+            <div class="products-subform">
+              <span class="products-cart__close">X</span>
+              <section class="products-cart__list"></section>
+              <section class="products-cart__bottom">
+                <input class="products-cart__promo" type="text" placeholder="Ввести промокод" />
+                <div>
+                  <div class="products-cart__total">
+                    Итого:
+                    <span
+                      ><span class="products__item-currency">&#8372;</span
+                      ><span class="products-cart__total-value"></span
+                    ></span>
+                  </div>
+                  <div class="products-cart__delivery">
+                    Доставка: <span><span class="products__item-currency">&#8372;</span>0</span>
+                  </div>
                 </div>
-                <div class="products-cart__delivery">
-                  Доставка: <span><span class="products__item-currency">&#8372;</span>0</span>
+              </section>
+              <button class="products-cart__order">Заказать</button>
+            </div>
+            <section class="order-subform" id="order-subform">
+              <div class="order-subform__title">Оформление заказа:</div>
+              <div class="order-subform__inner">
+                <div class="order-subform__column">
+                  <input class="order-subform__fullname" type="text" placeholder="ФИО" required />
+                  <div class="order-subform__phone">
+                    <input type="tel" minlength="9" maxlength="9" pattern="[0-9]{9}" required />
+                    <span class="order-subform__phone-prefix">+380</span>
+                  </div>
+                  <input class="order-subform__email" type="email" placeholder="E-mail" />
+                  <div class="order-subform__row">
+                    <input class="order-subform__time" id="order-time" required />
+                    <input class="order-subform__date" id="order-date" required />
+                  </div>
+                </div>
+                <div class="order-subform__column">
+                  <input class="order-subform__city" type="text" name="" id="" placeholder="Киев" readonly />
+                  <input class="order-subform__street" type="text" placeholder="Улица" required />
+                  <input class="order-subform__bldg" type="text" placeholder="Дом" required />
+                  <input class="order-subform__apartment" type="text" placeholder="Квартира" required />
                 </div>
               </div>
+              <button class="button order-submit" type="submit">Продолжить</button>
             </section>
-            <button class="products-cart-submit" type="submit">Заказать</button>
           </form>
         </aside>
 
