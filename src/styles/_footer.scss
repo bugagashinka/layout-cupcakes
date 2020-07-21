@@ -58,3 +58,15 @@
     @include horizontal-list(25px, #fff);
   }
 }
+
+@media (max-width: 560px) {
+  .footer {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-column {
+      text-align: center;
+    }
+  }
+}
