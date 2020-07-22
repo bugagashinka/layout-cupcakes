@@ -12,12 +12,16 @@ const changed = require("gulp-changed");
 const del = require("del");
 const ghPages = require("gh-pages");
 const removeHtmlComments = require("gulp-remove-html-comments");
+const imagemin = require("gulp-imagemin");
+const recompress = require("imagemin-jpeg-recompress");
+const pngquant = require("imagemin-pngquant");
+const size = require("gulp-filesize");
 
 const isDev = process.env.NODE_ENV === "development";
 
 const dirs = {
   src: "./src/",
-  dest: "./build/"
+  dest: "./build/",
 };
 
 const settings = {
@@ -27,19 +31,19 @@ const settings = {
       styles: dirs.src + "styles/",
       scripts: dirs.src + "js/",
       images: {
-        all: dirs.src + "img/"
+        all: dirs.src + "img/",
       },
-      fonts: dirs.src + "fonts/"
+      fonts: dirs.src + "fonts/",
     },
     dest: {
       root: dirs.dest,
       styles: dirs.dest + "css/",
       scripts: dirs.dest + "js/",
       images: {
-        all: dirs.dest + "img/"
+        all: dirs.dest + "img/",
       },
-      fonts: dirs.dest + "fonts/"
-    }
+      fonts: dirs.dest + "fonts/",
+    },
   },
   vendor: {
     styles: [
@@ -47,7 +51,7 @@ const settings = {
       "./node_modules/slick-carousel/slick/slick.css",
       "./node_modules/rateyo/src/jquery.rateyo.css",
       "./node_modules/flatpickr/dist/flatpickr.css",
-      "./node_modules/magnific-popup/dist/magnific-popup.css"
+      "./node_modules/magnific-popup/dist/magnific-popup.css",
     ],
     scripts: [
       "./node_modules/jquery/dist/jquery.js",
@@ -55,9 +59,9 @@ const settings = {
       "./node_modules/rateyo/src/jquery.rateyo.js",
       "./node_modules/rellax/rellax.js",
       "./node_modules/flatpickr/dist/flatpickr.js",
-      "./node_modules/magnific-popup/dist/jquery.magnific-popup.js"
-    ]
-  }
+      "./node_modules/magnific-popup/dist/jquery.magnific-popup.js",
+    ],
+  },
 };
 
 function clean() {
@@ -97,7 +101,7 @@ function styles() {
     .on("error", sass.logError)
     .pipe(
       rename({
-        suffix: ".min"
+        suffix: ".min",
       })
     )
     .pipe(autoprefixer())
@@ -115,7 +119,33 @@ function fonts() {
 }
 
 function images() {
-  return gulp.src(`${settings.paths.src.images.all}**/*`).pipe(gulp.dest(settings.paths.dest.images.all));
+  if (process.env.NODE_ENV === "development") {
+    return gulp.src(`${settings.paths.src.images.all}**/*`).pipe(gulp.dest(settings.paths.dest.images.all));
+  }
+  return gulp
+    .src(`${settings.paths.src.images.all}**/*.+(png|jpg|jpeg|gif|svg|ico|webp)`)
+    .pipe(size())
+    .pipe(
+      imagemin([
+        recompress({
+          loops: 4,
+          min: 80,
+          max: 100,
+          quality: "high",
+          use: [pngquant()],
+        }),
+        imagemin.gifsicle(),
+        imagemin.optipng(),
+        imagemin.svgo(),
+      ])
+    )
+    .pipe(gulp.dest(settings.paths.dest.images.all))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    )
+    .pipe(size());
 }
 
 function icons(done) {
@@ -132,7 +162,7 @@ function html() {
 function server(done) {
   browserSync.init({
     server: settings.paths.dest.root,
-    reloadOnRestart: true
+    reloadOnRestart: true,
   });
   done();
 }
