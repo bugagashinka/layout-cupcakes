@@ -116,7 +116,7 @@
 
 @media (max-width: 1024px) {
   .header__logo-img {
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .header__cart {
     padding-left: 0px;
@@ -126,7 +126,7 @@
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 900px) {
   .header__top {
     box-shadow: none;
   }
@@ -140,17 +140,19 @@
       visibility: hidden;
       opacity: 0;
       height: 0;
+      overflow: hidden;
       top: 100px;
       left: 0;
       right: 0;
       width: 100%;
       background-color: rgba(255, 255, 255, 0.5);
       z-index: 124;
-      transition: all 0.3s;
 
       &_visible {
         opacity: 1;
         visibility: visible;
+        transition: all 0.3s;
+
         height: 400px;
       }
 
