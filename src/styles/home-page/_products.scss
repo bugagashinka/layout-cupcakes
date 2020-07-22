@@ -1,5 +1,7 @@
 $product-item-margin: 10px;
-$product-row-count: 6;
+$lg-row-item-count: 5;
+$md-row-item-count: 3;
+$sm-row-item-count: 1;
 
 .category {
   margin: 40px 0;
@@ -27,6 +29,8 @@ $product-row-count: 6;
     border: 2px solid #ab9b9b;
     border-width: 0 2px 2px 0;
     transform: rotate(-135deg) translateY(-50%);
+    top: 30%;
+
     transition: border 0.3s;
     transition: transform 0.4s;
   }
@@ -51,7 +55,7 @@ $product-row-count: 6;
   }
 
   &-count {
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
   }
 
   &-title {
@@ -125,14 +129,8 @@ $product-row-count: 6;
     display: flex;
     margin: 0 -10px;
     flex-wrap: wrap;
-    justify-content: space-between;
     max-height: 3000px;
     transition: max-height 0.6s ease-out;
-
-    &::after {
-      content: "";
-      flex: 1 0 175px;
-    }
   }
 
   .shrink + &__subcategory-list {
@@ -146,7 +144,7 @@ $product-row-count: 6;
 
   &__item {
     position: relative;
-    flex: 0 0 calc((100% - #{$product-row-count} * #{$product-item-margin} * 2) / #{$product-row-count});
+    width: calc(100% / #{$lg-row-item-count} - 2 * #{$product-item-margin});
     min-width: 175px;
     margin: 0 $product-item-margin 30px;
     border: 1px solid rgba($brown-color, 0.3);
@@ -244,7 +242,8 @@ $product-row-count: 6;
     }
 
     &-count {
-      display: inline-block;
+      display: block;
+      max-width: 107px;
       border: 1px solid rgba($brown-color, 0.3);
       transition: border 0.3s;
 
@@ -374,6 +373,47 @@ $product-row-count: 6;
 
     &:hover {
       background-color: #d85880;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .products__item {
+    width: calc(100% / #{$md-row-item-count} - 2 * #{$product-item-margin});
+  }
+}
+
+@media (max-width: 650px) {
+  .products__subcategory-list {
+    max-height: initial;
+  }
+  .subcategory-title {
+    text-align: left;
+    padding: 15px 12px;
+    padding-right: 65px;
+
+    &::after {
+      right: 10px;
+    }
+  }
+
+  .products__item {
+    width: calc(100% / #{$sm-row-item-count} - 2 * #{$product-item-margin});
+
+    &-img {
+      background-size: contain;
+    }
+
+    &-title,
+    &-count {
+      display: block;
+    }
+    &-title {
+      min-height: 30px;
+    }
+    &-count {
+      max-width: 150px;
+      margin: 0 auto 20px;
     }
   }
 }
