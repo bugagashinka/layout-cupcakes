@@ -5,7 +5,8 @@
   &__inner {
     max-width: 800px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     align-items: center;
   }
@@ -22,6 +23,7 @@
 
   &__img {
     @include background-img;
+    background-size: contain;
     width: 450px;
     height: 267px;
   }
