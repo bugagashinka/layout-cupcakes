@@ -79,3 +79,45 @@
   background-color: $jam-color;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .order-subform {
+    display: none;
+  }
+  .products-cart {
+    &.full-opened {
+      .products-subform {
+        display: none;
+      }
+      .order-subform {
+        display: block;
+        padding-bottom: 100px;
+      }
+      .order-subform__inner {
+        max-height: calc(100% - 120px);
+
+        overflow-y: scroll;
+
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+        scrollbar-width: none; /* Firefox */
+
+        &::-webkit-scrollbar {
+          display: none; /* Safari and Chrome */
+        }
+      }
+    }
+  }
+
+  .order-submit {
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .order-subform input {
+    padding: 12px 6px;
+  }
+}
