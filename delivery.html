@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доставка и оплата, Кексы Ням-ням</title>
+    <link rel="stylesheet" href="./css/libs.min.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="content delivery-content">
+        <header class="delivery-header">
+          <section class="header__top">
+            <div class="container">
+              <div class="header__top-inner">
+                <div class="header__logo">
+                  <a href="/index.html"><span class="header__logo-img"></span></a>
+                </div>
+                <nav class="header__menu">
+                  <button class="header__menu-btn" type="button">
+                    <span class="header__menu-row"></span>
+                    <span class="header__menu-row"></span>
+                    <span class="header__menu-row"></span>
+                  </button>
+                  <ul class="header__menu-list menu-list">
+                    <li class="header__menu-item"><a href="/index.html#products">Меню</a></li>
+                    <li class="header__menu-item"><a href="/404.html">Акции</a></li>
+                    <li class="header__menu-item"><a href="/delivery.html">Доставка и Оплата</a></li>
+                    <li class="header__menu-item"><a href="/contacts.html">Контакты</a></li>
+                  </ul>
+                </nav>
+                <a class="header__cart icon-cart" href="#">
+                  <span class="header__cart-count"></span>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section
+            class="rellax header__bottom"
+            data-rellax-speed="-6"
+            style="background-image: url(./img/delivery-page/header-img.jpg);"
+            tabindex="0"
+          ></section>
+        </header>
+
+        <aside class="products-cart">
+          <form class="products-cart__form" action="/" onsubmit="return false">
+            <div class="products-subform">
+              <span class="products-cart__close">X</span>
+              <section class="products-cart__list"></section>
+              <section class="products-cart__bottom">
+                <input class="products-cart__promo" type="text" placeholder="Ввести промокод" />
+                <div>
+                  <div class="products-cart__total">
+                    Итого:
+                    <span
+                      ><span class="products__item-currency">&#8372;</span
+                      ><span class="products-cart__total-value"></span
+                    ></span>
+                  </div>
+                  <div class="products-cart__delivery">
+                    Доставка: <span><span class="products__item-currency">&#8372;</span>0</span>
+                  </div>
+                </div>
+              </section>
+              <button class="products-cart__order">Заказать</button>
+            </div>
+            <section class="order-subform" id="order-subform">
+              <span class="order-subform__close">Назад</span>
+              <div class="order-subform__title">Оформление заказа:</div>
+              <div class="order-subform__inner">
+                <div class="order-subform__column">
+                  <input class="order-subform__fullname" type="text" placeholder="ФИО" required />
+                  <div class="order-subform__phone">
+                    <input type="tel" minlength="9" maxlength="9" pattern="[0-9]{9}" required />
+                    <span class="order-subform__phone-prefix">+380</span>
+                  </div>
+                  <input class="order-subform__email" type="email" placeholder="E-mail" />
+                  <div class="order-subform__row">
+                    <input class="order-subform__time" id="order-time" required />
+                    <input class="order-subform__date" id="order-date" required />
+                  </div>
+                </div>
+                <div class="order-subform__column">
+                  <input class="order-subform__city" type="text" name="" id="" placeholder="Киев" readonly />
+                  <input class="order-subform__street" type="text" placeholder="Улица" required />
+                  <input class="order-subform__bldg" type="text" placeholder="Дом" required />
+                  <input class="order-subform__apartment" type="text" placeholder="Квартира" required />
+                </div>
+              </div>
+              <button class="button order-submit" type="submit">Продолжить</button>
+            </section>
+          </form>
+        </aside>
+
+        <section class="rellax delivery-info" data-rellax-speed="3">
+          <div class="container">
+            <div class="delivery-info__title title-large">Доставка и оплата</div>
+            <p>
+              Наша служба доставки привезет Ваш заказ в центр г. Киева от одного часа с момента оформления заказа,
+              сочным, горячим и умопомрачительно аппетитным. В другие районы Киева - от 1,5 часов, в зависимости от
+              загруженности пекарен.
+            </p>
+            <p>
+              Убедительная просьба, осуществлять Ваши крупные заказы заблаговременно. Мы постоянно развиваемся и
+              набираем обороты, однако пока, в понедельник и пятницу, а также в обеденное время мы иногда не успеваем
+              удовлетворить всех ценителей наших кексов. Поэтому, мы очень Вас просим, если время доставки для Вас
+              принципиально, старайтесь делать заказ максимально заблаговременно. Кексы в любом случае будут
+              приготовлены перед самым отправлением к Вам, но вы сможете рассчитывать, что они будут у Вас в указанное
+              время. Спасибо Вам за понимание! Мы обязательно перерастем и это!
+            </p>
+            <p>
+              Мы работаем семь дней в неделю! С понедельника по пятницу доставка осуществляется с с 10:00 до 21:00.
+              Заказы принимаются с 9:00 до 20:00. А в субботу и воскресенье - доставка осуществляется с 11:00 до 21:00.
+              И заказы принимаются с 10:00 до 20:00. В случае, если Вы желаете расплатиться картой - обязательно
+              сообщите об этом оператору, либо укажите в комментарии к заказу.
+            </p>
+            <div class="delivery-info__subtitle delivery-info__subtitle--upper title-small">Доставка бесплатна!</div>
+            <div class="delivery-info__subtitle title-small">Телефоны:</div>
+            <div class="delivery-info__phones">
+              <ul>
+                <li class="icon-phone"><a href="tel:+380982741001">+38 (098) 274-10-01 - Киевстар</a></li>
+                <li class="icon-phone"><a href="tel:+380632741001">+38 (063) 274-10-01 - Life:)</a></li>
+                <li class="icon-phone"><a href="tel:+380952741001">+38 (095) 274-10-01 - МТС</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <section class="footer-column footer__workflow">
+              <ul class="footer__workflow-list">
+                <li><div class="workflow__item--bold">Прием заказов с 09:00 до 20:00</div></li>
+                <li><div>Работаем без выходных</div></li>
+                <li><div>Доставка с 10:00 до 21:00</div></li>
+                <li>
+                  <a class="footer__social-email" href="mailto:manager@cupcakes.com.ua">manager@cupcakes.com.ua</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer-column footer__phones">
+              <ul class="footer__phones-list">
+                <li class="icon-phone"><a href="tel:+380982741001">+38 (098) 274-10-01</a></li>
+                <li class="icon-phone"><a href="tel:+380632741001">+38 (063) 274-10-01</a></li>
+                <li class="icon-phone"><a href="tel:+380952741001">+38 (095) 274-10-01</a></li>
+              </ul>
+            </section>
+            <section class="footer-column footer__social">
+              <ul class="footer__social-list">
+                <li><a class="icon-location footer__social-loc" href=""></a></li>
+                <li><a class="icon-facebook2 footer__social-facebook" href="https://http://facebook.com/"></a></li>
+                <li><a class="icon-instagram footer__social-instagram" href="http://instagram.com/"></a></li>
+                <li>
+                  <a class="icon-mail footer__social-email" href="mailto:manager@cupcakes.com.ua"></a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/libs.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
