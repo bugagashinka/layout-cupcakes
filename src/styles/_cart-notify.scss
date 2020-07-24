@@ -1,8 +1,8 @@
 .cart-notify {
   display: none;
   position: absolute;
-  top: 80px;
-  right: -80px;
+  top: 110px;
+  right: -40px;
   width: 240px;
   border: 1px solid #803a19;
   padding: 20px;
@@ -27,9 +27,4 @@
 }
 .cart__item-title {
   margin: 0;
-}
-@media (max-width: 500px) {
-  .cart-notify {
-    right: -40px;
-  }
 }
