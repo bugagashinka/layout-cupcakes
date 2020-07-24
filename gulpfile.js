@@ -16,6 +16,7 @@ const imagemin = require("gulp-imagemin");
 const recompress = require("imagemin-jpeg-recompress");
 const pngquant = require("imagemin-pngquant");
 const size = require("gulp-filesize");
+const replace = require("gulp-replace");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -98,6 +99,7 @@ function styles() {
     .src(`${settings.paths.src.styles}styles.scss`, { sorcmaps: true })
     .pipe(wait(500))
     .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(gulpIf(!isDev, replace("../../", "../")))
     .on("error", sass.logError)
     .pipe(
       rename({
