@@ -30,6 +30,12 @@
   &.full-opened {
     .products-cart__order {
       background-color: $brown-color;
+      outline: solid 2px $brown-color;
+
+      &:focus {
+        outline-color: #000;
+      }
+
       &::before {
         content: "\2190";
         margin-left: -10px;

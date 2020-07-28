@@ -366,7 +366,6 @@ $(function () {
     }
 
     function addToCart(productModel) {
-      console.log("Add to cart", productModel);
       var cart = getCart();
 
       var cartItem = cart.products[productModel.title];
@@ -429,6 +428,24 @@ $(function () {
         enabled: true,
       },
       callbacks: {
+        open: function () {
+          var popUp = $.magnificPopup.instance;
+          popUp.content.find(".product-details-buy").click(function (event) {
+            var title = popUp.currItem.data.title,
+              price = popUp.currItem.data.price,
+              thumb = popUp.currItem.data.image,
+              count = popUp.content.find(".product-details__count").val();
+            event.preventDefault();
+            popUp.close();
+
+            addToCart({
+              title: title,
+              thumb: thumb,
+              price: price,
+              count: count,
+            });
+          });
+        },
         markupParse: function (template, values, item) {
           // Product details rate
           template.find(".product-details__rate").rateYo({
@@ -439,25 +456,11 @@ $(function () {
             return /^\d*$/.test(value) && value > 0;
           });
 
-          var thumb = template.find(".product-details__img").css("background-image", values.image);
-          var title = template.find(".product-details__title").html(values.title);
-          var price = template.find(".product-details__price-value").html(values.price);
+          template.find(".product-details__img").css("background-image", values.image);
+          template.find(".product-details__title").html(values.title);
+          template.find(".product-details__price-value").html(values.price);
           template.find(".product-details__descr").html(values.description);
-          var count = template.find(".product-details__count").val(values.count);
-
-          console.log(template);
-          console.log("!!!", template.find(".product-details-buy"));
-
-          template.find(".product-details-buy").click(function (event) {
-            event.preventDefault();
-            $.magnificPopup.instance.close();
-            addToCart({
-              title: title.html(),
-              thumb: thumb.css("background-image"),
-              price: price.html(),
-              count: count.val(),
-            });
-          });
+          template.find(".product-details__count").val(values.count);
         },
       },
     };
